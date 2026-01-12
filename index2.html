@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Специальности | Губернский колледж</title>
+  <meta name="viewport" content="width=1280, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-container">
+    <!-- Хедер (оставляем как есть) -->
+    <div class="header">
+      <div class="top-menu">
+        <div class="top-menu__item">Базовая профессиональная образовательная организация, Региональный центр инклюзивного образования</div>
+        <div class="top-menu__item">Учебно - Производственный комплекс</div>
+        <div class="top-menu__item">Поиск</div>
+        <div class="top-menu__item">Версия для слабовидящих</div>
+      </div>
+      <div class="header-main">
+        <div class="header-logo">
+          <div class="logo-placeholder"></div>
+        </div>
+        <div class="header-title">
+          <div class="header-title__subtitle">
+            Государственное бюджетное профессиональное образовательное учреждение
+          </div>
+          <div class="header-title__main">
+            Нижегородский Губернский колледж
+          </div>
+        </div>
+      </div>
+      <nav class="header-nav">
+        <a href="index.html">Главная</a>
+        <a href="#">Студентам</a>
+        <a href="index2.html" class="active">Поступающим</a>
+        <a href="#">Новости</a>
+        <a href="#">Мастерские</a>
+        <a href="#">Контакты</a>
+        <a href="#">Часто задаваемые вопросы</a>
+      </nav>
+    </div>
+    
+    <!-- Основная область -->
+    <div class="content-row">
+      <!-- Боковое меню (оставляем как в оригинале) -->
+      <aside class="sidebar">
+        <div class="sidebar-block">
+          <div class="sidebar-block__title">СВЕДЕНИЯ ОБ ОБРАЗОВАТЕЛЬНОЙ ОРГАНИЗАЦИИ</div>
+          <ul class="sidebar-list">
+            <li>Основные сведения</li>
+            <li>Структура и органы управления образовательной организацией</li>
+            <li>Документы</li>
+            <li>Образование</li>
+            <li>Образовательные стандарты и требования</li>
+            <li>Руководство</li>
+            <li>Педагогический состав</li>
+            <li>Материально-техническое обеспечение и оснащённость образовательного процесса. Доступная среда</li>
+            <li>Стипендии и меры поддержки обучающихся</li>
+            <li>Платные образовательные услуги</li>
+            <li>Финансово-хозяйственная деятельность</li>
+            <li>Вакантные места для приёма (перевода) обучающихся</li>
+            <li>Международное сотрудничество</li>
+            <li>Организация питания в образовательной организации</li>
+          </ul>
+        </div>
+        <div class="sidebar-block">
+          <div class="sidebar-block__title">ДЕЯТЕЛЬНОСТЬ КОЛЛЕДЖА</div>
+          <ul class="sidebar-list">
+            <li>ЦК и МПЦ «Сфера»</li>
+            <li>Библиотека</li>
+            <li>Ядро СППО</li>
+            <li>Вакансии</li>
+            <li>Наставничество</li>
+            <li>Антикоррупционная деятельность</li>
+            <li>Антитеррористическая безопасность</li>
+            <li>Информационная безопасность</li>
+            <li>Интерактивный киоск</li>
+            <li>Охрана труда</li>
+            <!-- Выпадающее меню Специальности в боковой панели -->
+            <li class="sidebar-dropdown">
+              <div class="sidebar-dropdown-toggle">
+                Специальности
+                <span class="dropdown-arrow">▼</span>
+              </div>
+              <div class="sidebar-dropdown-menu">
+                <div class="sidebar-dropdown-content">
+                  <!-- Специальности -->
+                  <div class="sidebar-dropdown-section">
+                    <div class="sidebar-dropdown-title">Список специальностей</div>
+                    <a href="#" onclick="showSpecialty(1)">Банковское дело</a>
+                    <a href="#" onclick="showSpecialty(2)">Документационное обеспечение управления и архивоведение</a>
+                    <a href="#" onclick="showSpecialty(3)">Дошкольное образование</a>
+                    <a href="#" onclick="showSpecialty(4)">Коммерция (по отраслям)</a>
+                    <a href="#" onclick="showSpecialty(5)">Музыкальное образование</a>
+                    <a href="#" onclick="showSpecialty(6)">Право и организация социального обеспечения</a>
+                    <a href="#" onclick="showSpecialty(7)">Преподавание в начальных классах</a>
+                    <a href="#" onclick="showSpecialty(8)">Прикладная информатика (по отраслям)</a>
+                    <a href="index.html" onclick="showSpecialty(9)">Информационные системы и программирование</a>
+                    <a href="#" onclick="showSpecialty(10)">Товароведение</a>
+                    <a href="#" onclick="showSpecialty(11)">Экономика и бухгалтерский учет (по отраслям)</a>
+                    <a href="#" onclick="showSpecialty(12)">Юриспруденция</a>
+                    <a href="#" onclick="showSpecialty(13)">Операционная деятельность в логистике</a>
+                    <a href="#" onclick="showSpecialty(14)">Торговое дело</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>Учебная работа</li>
+            <li>Учебно-производственная работа</li>
+            <li>Воспитательная работа</li>
+            <li>Навигаторы детства</li>
+            <li>Социальный педагог</li>
+            <li>Психолог</li>
+          </ul>
+        </div>
+      </aside>
+      
+      <!-- Основной контент с карточками -->
+      <main class="main-content">
+        <div class="page-header">
+          <h1>Специальности колледжа</h1>
+          <p class="page-subtitle">Выберите направление подготовки для получения подробной информации</p>
+        </div>
+        
+        <!-- Слайдер специальностей (1 карточка на страницу) -->
+        <div class="specialties-slider">
+          <div class="slider-container">
+            <div class="slider-track" id="slider-track">
+              <!-- Карточка 1: Банковское дело -->
+              <div class="slider-card active" data-id="1">
+                <div class="card-color" style="background-color: #4a90e2"></div>
+                <div class="card-content">
+                  <h3>Банковское дело</h3>
+                  <p class="card-code">Код: 38.02.07</p>
+                  <p class="card-qualification">Специалист банковского дела</p>
+                  <div class="card-details">
+                    <span class="card-detail">2 года 10 месяцев</span>
+                    <span class="card-detail">Очная</span>
+                    <span class="card-detail">30 мест</span>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Карточка 2: Документационное обеспечение управления и архивоведение -->
+              <div class="slider-card" data-id="2">
+                <div class="card-color" style="background-color: #50c878"></div>
+                <div class="card-content">
+                  <h3>Документационное обеспечение управления и архивоведение</h3>
+                  <p class="card-code">Код: 46.02.01</p>
+                  <p class="card-qualification">Специалист по документационному обеспечению управления, архивист</p>
+                  <div class="card-details">
+                    <span class="card-detail">2 года 10 месяцев</span>
+                    <span class="card-detail">Очная</span>
+                    <span class="card-detail">25 мест</span>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Карточка 3: Дошкольное образование -->
+              <div class="slider-card" data-id="3">
+                <div class="card-color" style="background-color: #ff6b6b"></div>
+                <div class="card-content">
+                  <h3>Дошкольное образование</h3>
+                  <p class="card-code">Код: 44.02.01</p>
+                  <p class="card-qualification">Воспитатель детей дошкольного возраста</p>
+                  <div class="card-details">
+                    <span class="card-detail">3 года 10 месяцев</span>
+                    <span class="card-detail">Очная / Заочная</span>
+                    <span class="card-detail">40 мест</span>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Карточка 4: Коммерция (по отраслям) -->
+              <div class="slider-card" data-id="4">
+                <div class="card-color" style="background-color: #9b59b6"></div>
+                <div class="card-content">
+                  <h3>Коммерция (по отраслям)</h3>
+                  <p class="card-code">Код: 38.02.04</p>
+                  <p class="card-qualification">Менеджер по продажам</p>
+                  <div class="card-details">
+                    <span class="card-detail">2 года 10 месяцев</span>
+                    <span class="card-detail">Очная</span>
+                    <span class="card-detail">25 мест</span>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Карточка 5: Музыкальное образование -->
+              <div class="slider-card" data-id="5">
+                <div class="card-color" style="background-color: #3498db"></div>
+                <div class="card-content">
+                  <h3>Музыкальное образование</h3>
+                  <p class="card-code">Код: 53.02.01</p>
+                  <p class="card-qualification">Учитель музыки, музыкальный руководитель</p>
+                  <div class="card-details">
+                    <span class="card-detail">3 года 10 месяцев</span>
+                    <span class="card-detail">Очная</span>
+                    <span class="card-detail">20 мест</span>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Карточка 6: Право и организация социального обеспечения -->
+              <div class="slider-card" data-id="6">
+                <div class="card-color" style="background-color: #e67e22"></div>
+                <div class="card-content">
+                  <h3>Право и организация социального обеспечения</h3>
+                  <p class="card-code">Код: 40.02.01</p>
+                  <p class="card-qualification">Юрист</p>
+                  <div class="card-details">
+                    <span class="card-detail">2 года 10 месяцев</span>
+                    <span class="card-detail">Очная / Заочная</span>
+                    <span class="card-detail">35 мест</span>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Карточка 7: Преподавание в начальных классах -->
+              <div class="slider-card" data-id="7">
+                <div class="card-color" style="background-color: #1abc9c"></div>
+                <div class="card-content">
+                  <h3>Преподавание в начальных классах</h3>
+                  <p class="card-code">Код: 44.02.02</p>
+                  <p class="card-qualification">Учитель начальных классов</p>
+                  <div class="card-details">
+                    <span class="card-detail">3 года 10 месяцев</span>
+                    <span class="card-detail">Очная / Заочная</span>
+                    <span class="card-detail">45 мест</span>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Карточка 8: Прикладная информатика (по отраслям) -->
+              <div class="slider-card" data-id="8">
+                <div class="card-color" style="background-color: #2ecc71"></div>
+                <div class="card-content">
+                  <h3>Прикладная информатика (по отраслям)</h3>
+                  <p class="card-code">Код: 09.02.05</p>
+                  <p class="card-qualification">Техник-программист</p>
+                  <div class="card-details">
+                    <span class="card-detail">3 года 10 месяцев</span>
+                    <span class="card-detail">Очная</span>
+                    <span class="card-detail">20 мест</span>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Карточка 9: Информационные системы и программирование -->
+              <div class="slider-card" data-id="9">
+                <div class="card-color" style="background-color: #f39c12"></div>
+                <div class="card-content">
+                  <h3>Информационные системы и программирование</h3>
+                  <p class="card-code">Код: 09.02.07</p>
+                  <p class="card-qualification">Программист, специалист по информационным системам</p>
+                  <div class="card-details">
+                    <span class="card-detail">3 года 10 месяцев</span>
+                    <span class="card-detail">Очная / Заочная</span>
+                    <span class="card-detail">25 мест</span>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Карточка 10: Товароведение -->
+              <div class="slider-card" data-id="10">
+                <div class="card-color" style="background-color: #8e44ad"></div>
+                <div class="card-content">
+                  <h3>Товароведение</h3>
+                  <p class="card-code">Код: 38.02.05</p>
+                  <p class="card-qualification">Товаровед-эксперт</p>
+                  <div class="card-details">
+                    <span class="card-detail">2 года 10 месяцев</span>
+                    <span class="card-detail">Очная</span>
+                    <span class="card-detail">20 мест</span>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Карточка 11: Экономика и бухгалтерский учет (по отраслям) -->
+              <div class="slider-card" data-id="11">
+                <div class="card-color" style="background-color: #27ae60"></div>
+                <div class="card-content">
+                  <h3>Экономика и бухгалтерский учет (по отраслям)</h3>
+                  <p class="card-code">Код: 38.02.01</p>
+                  <p class="card-qualification">Бухгалтер, специалист по налогообложению</p>
+                  <div class="card-details">
+                    <span class="card-detail">2 года 10 месяцев</span>
+                    <span class="card-detail">Очная / Заочная</span>
+                    <span class="card-detail">30 мест</span>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Карточка 12: Юриспруденция -->
+              <div class="slider-card" data-id="12">
+                <div class="card-color" style="background-color: #16a085"></div>
+                <div class="card-content">
+                  <h3>Юриспруденция</h3>
+                  <p class="card-code">Код: 40.02.03</p>
+                  <p class="card-qualification">Юрист</p>
+                  <div class="card-details">
+                    <span class="card-detail">2 года 10 месяцев</span>
+                    <span class="card-detail">Очная / Заочная</span>
+                    <span class="card-detail">25 мест</span>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Карточка 13: Операционная деятельность в логистике -->
+              <div class="slider-card" data-id="13">
+                <div class="card-color" style="background-color: #d35400"></div>
+                <div class="card-content">
+                  <h3>Операционная деятельность в логистике</h3>
+                  <p class="card-code">Код: 38.02.03</p>
+                  <p class="card-qualification">Специалист по логистике</p>
+                  <div class="card-details">
+                    <span class="card-detail">2 года 10 месяцев</span>
+                    <span class="card-detail">Очная</span>
+                    <span class="card-detail">20 мест</span>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Карточка 14: Торговое дело -->
+              <div class="slider-card" data-id="14">
+                <div class="card-color" style="background-color: #c0392b"></div>
+                <div class="card-content">
+                  <h3>Торговое дело</h3>
+                  <p class="card-code">Код: 38.02.06</p>
+                  <p class="card-qualification">Специалист по торговле</p>
+                  <div class="card-details">
+                    <span class="card-detail">2 года 10 месяцев</span>
+                    <span class="card-detail">Очная</span>
+                    <span class="card-detail">25 мест</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="slider-controls">
+            <button class="slider-btn prev-btn" id="prev-btn">
+              <span>‹</span>
+            </button>
+            <div class="slider-dots" id="slider-dots">
+              <!-- Точки будут добавлены через JavaScript -->
+            </div>
+            <button class="slider-btn next-btn" id="next-btn">
+              <span>›</span>
+            </button>
+          </div>
+        </div>
+        
+        <!-- Детальная информация о специальности -->
+        <div class="specialty-detail" id="specialty-detail">
+          <div class="detail-header">
+            <h2 id="detail-title">Банковское дело</h2>
+            <p id="detail-subtitle">Специалист банковского дела</p>
+          </div>
+          
+          <div class="detail-content">
+            <div class="detail-left">
+              <div class="detail-info">
+                <div class="info-item">
+                  <span class="info-label">Код специальности:</span>
+                  <span class="info-value" id="info-code">38.02.07</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Квалификация:</span>
+                  <span class="info-value" id="info-qualification">Специалист банковского дела</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Форма обучения:</span>
+                  <span class="info-value" id="info-form">Очная</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Срок обучения:</span>
+                  <span class="info-value" id="info-duration">2 года 10 месяцев</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Бюджетные места:</span>
+                  <span class="info-value" id="info-budget">30 мест</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Вступительные испытания:</span>
+                  <span class="info-value" id="info-exams">Конкурс аттестатов</span>
+                </div>
+              </div>
+              
+              <div class="detail-description" id="detail-description">
+                <p>Подготовка специалистов для работы в банковской сфере: ведение счетов, кредитование, расчетно-кассовое обслуживание, операции на финансовых рынках.</p>
+              </div>
+            </div>
+            
+            <div class="detail-right">
+              <div class="detail-image" id="detail-image" style="background-color: #4a90e2">
+                <div class="image-placeholder"></div>
+              </div>
+              <button class="apply-btn" id="apply-btn">Подать заявление</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- JavaScript для интерактивности -->
+  <script>
+    // Данные всех 14 специальностей
+    const specialtiesData = {
+      1: {
+        title: "Банковское дело",
+        code: "38.02.07",
+        qualification: "Специалист банковского дела",
+        form: "Очная",
+        duration: "2 года 10 месяцев",
+        budget: "30 мест",
+        exams: "Конкурс аттестатов",
+        description: "Подготовка специалистов для работы в банковской сфере: ведение счетов, кредитование, расчетно-кассовое обслуживание, операции на финансовых рынках.",
+        color: "#4a90e2"
+      },
+      2: {
+        title: "Документационное обеспечение управления и архивоведение",
+        code: "46.02.01",
+        qualification: "Специалист по документационному обеспечению управления, архивист",
+        form: "Очная",
+        duration: "2 года 10 месяцев",
+        budget: "25 мест",
+        exams: "Конкурс аттестатов",
+        description: "Подготовка специалистов по работе с документами, организации делопроизводства, архивному делу и документоведению.",
+        color: "#50c878"
+      },
+      3: {
+        title: "Дошкольное образование",
+        code: "44.02.01",
+        qualification: "Воспитатель детей дошкольного возраста",
+        form: "Очная / Заочная",
+        duration: "3 года 10 месяцев",
+        budget: "40 мест",
+        exams: "Конкурс аттестатов",
+        description: "Подготовка воспитателей для работы в детских садах, центрах развития ребенка. Обучение включает педагогику, психологию, методики развития детей.",
+        color: "#ff6b6b"
+      },
+      4: {
+        title: "Коммерция (по отраслям)",
+        code: "38.02.04",
+        qualification: "Менеджер по продажам",
+        form: "Очная",
+        duration: "2 года 10 месяцев",
+        budget: "25 мест",
+        exams: "Конкурс аттестатов",
+        description: "Подготовка специалистов в области торговли, маркетинга, управления продажами и логистики.",
+        color: "#9b59b6"
+      },
+      5: {
+        title: "Музыкальное образование",
+        code: "53.02.01",
+        qualification: "Учитель музыки, музыкальный руководитель",
+        form: "Очная",
+        duration: "3 года 10 месяцев",
+        budget: "20 мест",
+        exams: "Творческое испытание + конкурс аттестатов",
+        description: "Подготовка учителей музыки для работы в образовательных учреждениях, музыкальных руководителей для детских садов.",
+        color: "#3498db"
+      },
+      6: {
+        title: "Право и организация социального обеспечения",
+        code: "40.02.01",
+        qualification: "Юрист",
+        form: "Очная / Заочная",
+        duration: "2 года 10 месяцев",
+        budget: "35 мест",
+        exams: "Конкурс аттестатов",
+        description: "Подготовка юристов для работы в органах социальной защиты, пенсионных фондах, юридических отделах.",
+        color: "#e67e22"
+      },
+      7: {
+        title: "Преподавание в начальных классах",
+        code: "44.02.02",
+        qualification: "Учитель начальных классов",
+        form: "Очная / Заочная",
+        duration: "3 года 10 месяцев",
+        budget: "45 мест",
+        exams: "Конкурс аттестатов",
+        description: "Подготовка учителей для работы в начальной школе. Изучение методик преподавания, детской психологии.",
+        color: "#1abc9c"
+      },
+      8: {
+        title: "Прикладная информатика (по отраслям)",
+        code: "09.02.05",
+        qualification: "Техник-программист",
+        form: "Очная",
+        duration: "3 года 10 месяцев",
+        budget: "20 мест",
+        exams: "Конкурс аттестатов",
+        description: "Обучение разработке, внедрению и сопровождению информационных систем для различных отраслей экономики.",
+        color: "#2ecc71"
+      },
+      9: {
+        title: "Информационные системы и программирование",
+        code: "09.02.07",
+        qualification: "Программист, специалист по информационным системам",
+        form: "Очная / Заочная",
+        duration: "3 года 10 месяцев",
+        budget: "25 мест",
+        exams: "Конкурс аттестатов",
+        description: "Студенты обучаются разработке программного обеспечения, администрированию информационных систем.",
+        color: "#f39c12"
+      },
+      10: {
+        title: "Товароведение",
+        code: "38.02.05",
+        qualification: "Товаровед-эксперт",
+        form: "Очная",
+        duration: "2 года 10 месяцев",
+        budget: "20 мест",
+        exams: "Конкурс аттестатов",
+        description: "Подготовка специалистов по оценке качества товаров, экспертизе, организации закупок.",
+        color: "#8e44ad"
+      },
+      11: {
+        title: "Экономика и бухгалтерский учет (по отраслям)",
+        code: "38.02.01",
+        qualification: "Бухгалтер, специалист по налогообложению",
+        form: "Очная / Заочная",
+        duration: "2 года 10 месяцев",
+        budget: "30 мест",
+        exams: "Конкурс аттестатов",
+        description: "Обучение ведению бухгалтерского учета, составлению отчетности, налоговому планированию.",
+        color: "#27ae60"
+      },
+      12: {
+        title: "Юриспруденция",
+        code: "40.02.03",
+        qualification: "Юрист",
+        form: "Очная / Заочная",
+        duration: "2 года 10 месяцев",
+        budget: "25 мест",
+        exams: "Конкурс аттестатов",
+        description: "Подготовка юристов для работы в различных сферах: гражданское, уголовное, административное право.",
+        color: "#16a085"
+      },
+      13: {
+        title: "Операционная деятельность в логистике",
+        code: "38.02.03",
+        qualification: "Специалист по логистике",
+        form: "Очная",
+        duration: "2 года 10 месяцев",
+        budget: "20 мест",
+        exams: "Конкурс аттестатов",
+        description: "Подготовка специалистов по организации грузоперевозок, управлению цепочками поставок, складской логистике.",
+        color: "#d35400"
+      },
+      14: {
+        title: "Торговое дело",
+        code: "38.02.06",
+        qualification: "Специалист по торговле",
+        form: "Очная",
+        duration: "2 года 10 месяцев",
+        budget: "25 мест",
+        exams: "Конкурс аттестатов",
+        description: "Подготовка специалистов для работы в сфере торговли, управления ассортиментом, организации продаж.",
+        color: "#c0392b"
+      }
+    };
+
+    // Переменные для слайдера
+    let currentSlide = 0;
+    const cardsPerView = 1; // Теперь 1 карточка на страницу
+    const totalCards = 14; // Всего 14 специальностей
+    const totalSlides = totalCards - 1; // Всего слайдов
+
+    // Инициализация при загрузке
+    document.addEventListener('DOMContentLoaded', function() {
+      initSlider();
+      initEventListeners();
+      initDropdownMenu();
+      
+      // Показываем первую специальность по умолчанию
+      showSpecialty(1);
+    });
+
+    // Инициализация слайдера
+    function initSlider() {
+      const track = document.getElementById('slider-track');
+      const dotsContainer = document.getElementById('slider-dots');
+      
+      if (!track || !dotsContainer) return;
+      
+      // Создаем точки навигации (по одной на каждую карточку)
+      dotsContainer.innerHTML = '';
+      for (let i = 0; i < totalCards; i++) {
+        const dot = document.createElement('button');
+        dot.className = 'slider-dot' + (i === 0 ? ' active' : '');
+        dot.setAttribute('data-slide', i);
+        dotsContainer.appendChild(dot);
+      }
+      
+      // Устанавливаем правильную ширину трека
+      updateSliderPosition();
+      updateDots();
+      updateNavButtons();
+    }
+
+    // Инициализация обработчиков событий
+    function initEventListeners() {
+      // Обработчики для карточек
+      document.querySelectorAll('.slider-card').forEach(card => {
+        card.addEventListener('click', function() {
+          const id = parseInt(this.getAttribute('data-id'));
+          if (id) {
+            showSpecialty(id);
+            // Переходим к соответствующему слайду
+            goToSlide(id - 1);
+          }
+        });
+      });
+
+      // Кнопки навигации слайдера
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+      
+      if (prevBtn) {
+        prevBtn.addEventListener('click', () => moveSlide(-1));
+      }
+      
+      if (nextBtn) {
+        nextBtn.addEventListener('click', () => moveSlide(1));
+      }
+
+      // Точки навигации
+      document.getElementById('slider-dots').addEventListener('click', function(e) {
+        if (e.target.classList.contains('slider-dot')) {
+          const slideIndex = parseInt(e.target.getAttribute('data-slide'));
+          if (!isNaN(slideIndex)) {
+            goToSlide(slideIndex);
+          }
+        }
+      });
+
+      // Кнопка подачи заявления
+      const applyBtn = document.getElementById('apply-btn');
+      if (applyBtn) {
+        applyBtn.addEventListener('click', applyForSpecialty);
+      }
+    }
+
+    // Функция отображения информации о специальности
+    function showSpecialty(id) {
+      const spec = specialtiesData[id];
+      if (!spec) return;
+      
+      // Обновляем информацию
+      document.getElementById('detail-title').textContent = spec.title;
+      document.getElementById('detail-subtitle').textContent = spec.qualification;
+      document.getElementById('info-code').textContent = spec.code;
+      document.getElementById('info-qualification').textContent = spec.qualification;
+      document.getElementById('info-form').textContent = spec.form;
+      document.getElementById('info-duration').textContent = spec.duration;
+      document.getElementById('info-budget').textContent = spec.budget;
+      document.getElementById('info-exams').textContent = spec.exams;
+      document.getElementById('detail-description').innerHTML = `<p>${spec.description}</p>`;
+      document.getElementById('detail-image').style.backgroundColor = spec.color;
+      
+      // Обновляем активную карточку
+      updateActiveCard(id);
+    }
+
+    // Обновление активной карточки
+    function updateActiveCard(id) {
+      document.querySelectorAll('.slider-card').forEach(card => {
+        card.classList.remove('active');
+      });
+      
+      const selectedCard = document.querySelector(`.slider-card[data-id="${id}"]`);
+      if (selectedCard) {
+        selectedCard.classList.add('active');
+      }
+    }
+
+    // Функция для перелистывания слайдов
+    function moveSlide(direction) {
+      currentSlide += direction;
+      
+      // Ограничиваем текущий слайд
+      if (currentSlide < 0) currentSlide = 0;
+      if (currentSlide > totalSlides) currentSlide = totalSlides;
+      
+      // Обновляем позицию слайдера
+      updateSliderPosition();
+      
+      // Обновляем точки навигации
+      updateDots();
+      
+      // Обновляем состояние кнопок
+      updateNavButtons();
+      
+      // Показываем информацию о специальности на текущем слайде
+      showSpecialty(currentSlide + 1);
+    }
+
+    // Функция перехода к конкретному слайду
+    function goToSlide(slideIndex) {
+      currentSlide = slideIndex;
+      
+      // Обновляем позицию слайдера
+      updateSliderPosition();
+      
+      // Обновляем точки навигации
+      updateDots();
+      
+      // Обновляем состояние кнопок
+      updateNavButtons();
+      
+      // Показываем информацию о специальности
+      showSpecialty(currentSlide + 1);
+    }
+
+    // Обновление позиции слайдера
+    function updateSliderPosition() {
+      const track = document.getElementById('slider-track');
+      if (!track) return;
+      
+      // Рассчитываем смещение в процентах (100% на каждую карточку)
+      const translateX = -currentSlide * 100;
+      track.style.transform = `translateX(${translateX}%)`;
+    }
+
+    // Обновление точек навигации
+    function updateDots() {
+      document.querySelectorAll('.slider-dot').forEach((dot, index) => {
+        if (index === currentSlide) {
+          dot.classList.add('active');
+        } else {
+          dot.classList.remove('active');
+        }
+      });
+    }
+
+    // Обновление состояния кнопок навигации
+    function updateNavButtons() {
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+      
+      if (prevBtn) {
+        prevBtn.disabled = currentSlide === 0;
+      }
+      
+      if (nextBtn) {
+        nextBtn.disabled = currentSlide >= totalSlides;
+      }
+    }
+
+    // Функция подачи заявления
+    function applyForSpecialty() {
+      const specialty = document.getElementById('detail-title').textContent;
+      alert(`Форма подачи заявления на специальность "${specialty}" находится в разработке. Пожалуйста, обратитесь в приемную комиссию колледжа.`);
+    }
+
+    // Скрипт для выпадающего меню в боковой панели
+    function initDropdownMenu() {
+      const dropdownToggle = document.querySelector('.sidebar-dropdown-toggle');
+      const dropdownMenu = document.querySelector('.sidebar-dropdown-menu');
+      
+      if (dropdownToggle && dropdownMenu) {
+        dropdownToggle.addEventListener('click', function(e) {
+          e.stopPropagation();
+          const isVisible = dropdownMenu.style.display === 'block';
+          dropdownMenu.style.display = isVisible ? 'none' : 'block';
+          
+          const arrow = this.querySelector('.dropdown-arrow');
+          if (arrow) {
+            arrow.style.transform = isVisible ? 'rotate(0deg)' : 'rotate(180deg)';
+          }
+        });
+        
+        document.addEventListener('click', function() {
+          dropdownMenu.style.display = 'none';
+          const arrow = dropdownToggle.querySelector('.dropdown-arrow');
+          if (arrow) {
+            arrow.style.transform = 'rotate(0deg)';
+          }
+        });
+        
+        dropdownMenu.addEventListener('click', function(e) {
+          e.stopPropagation();
+        });
+        
+        // Адаптивное поведение для мобильных
+        function adjustForMobile() {
+          if (window.innerWidth <= 1100) {
+            dropdownMenu.style.position = 'fixed';
+            dropdownMenu.style.left = '10px';
+            dropdownMenu.style.right = '10px';
+            dropdownMenu.style.top = '50%';
+            dropdownMenu.style.transform = 'translateY(-50%)';
+            dropdownMenu.style.zIndex = '1000';
+            dropdownMenu.style.maxHeight = '80vh';
+            dropdownMenu.style.overflowY = 'auto';
+          } else {
+            dropdownMenu.style.position = '';
+            dropdownMenu.style.left = '';
+            dropdownMenu.style.right = '';
+            dropdownMenu.style.top = '';
+            dropdownMenu.style.transform = '';
+            dropdownMenu.style.zIndex = '';
+            dropdownMenu.style.maxHeight = '';
+            dropdownMenu.style.overflowY = '';
+          }
+        }
+        
+        adjustForMobile();
+        window.addEventListener('resize', adjustForMobile);
+        
+        // Изначально скрываем меню
+        dropdownMenu.style.display = 'none';
+      }
+    }
+  </script>
+</body>
+</html>

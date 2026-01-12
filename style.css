@@ -1,0 +1,1112 @@
+body, html {
+  zoom: 0.96;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Фоновая картинка основная */
+body {
+  background: url(../Проект/imgs/winter-bg.jpg) no-repeat fixed center;
+  background-size: cover;
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+
+/* Главный контейнер */
+.site-container {
+  display: flex;
+  max-width: 1280px;
+  margin: 0 auto 15px auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.09), 0 1px 14px rgba(0,0,0,0.09);
+  box-sizing: border-box;
+  padding-bottom: 15px;
+  min-height: 90vh;
+  flex-direction: column;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+}
+
+/* Хедер */
+.header {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  background: #fff;
+  margin-bottom: 0;
+  box-sizing: border-box;
+
+}
+
+.top-menu {
+  display: flex;
+  border-radius: 8px 8px 8px 8px;
+  overflow: hidden;
+}
+
+.top-menu__item {
+  min-height: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #33707b;
+  color: #fff;
+  font-size: 16px;
+  border-right: 1px solid #e5e5e5;
+  font-weight: 400;
+  transition: background 0.2s;
+  text-align: center;
+  padding: 0 28px;
+  box-sizing: border-box;
+  line-height: 1.5;
+  cursor: pointer;
+  white-space: pre-line;
+}
+
+.top-menu__item:last-child {
+  border-right: none;
+}
+.top-menu__item:hover {
+  background: #41889a;
+}
+
+.header-main {
+  display: flex;
+  align-items: center;
+  padding: 15px 0px 15px 0px;
+}
+.header-logo {
+  flex: 0 0 140px;
+  display: flex;
+  justify-content: center;
+}
+.logo-placeholder {
+  background: url(imgs/logo.png) no-repeat center/contain, #fff;
+  width: 250px;
+  height: 200px;
+  border-radius: 4px;
+  display: flex;
+}
+.header-title {
+  flex: 1;
+  text-align: left;
+  margin-left: 18px;
+}
+.header-title__subtitle {
+  font-size: 21pt;
+  color: #33707b;
+  margin-bottom: 6px;
+  font-family: 'Lobster', cursive, Arial, sans-serif;
+  font-weight: 400;
+}
+.header-title__main {
+  font-size: 45pt;
+  color: #33707b;
+  font-family: 'Lobster', cursive, Arial, sans-serif;
+  line-height: 1.19;
+  font-weight: 400;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 0 15px;
+  background: #fff;
+}
+.header-nav a {
+  display: block;
+  padding: 15px 20px 13px;
+  color: #33707b;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  transition: background 0.2s;
+  border-bottom: 2px solid transparent;
+  border-radius: 2px 2px 0 0;
+  margin-right: 2px;
+}
+.header-nav a:last-child {margin-right: 0;}
+.header-nav a:hover {
+  background: #f5f6f7;
+}
+
+/* Контентная часть (левое меню) */
+.content-row {
+  display: flex;
+  width: 100%;
+  margin-top: 18px;
+  min-height: 65vh;
+  flex: 1 1 auto;
+}
+.sidebar {
+  flex: 0 0 308px;
+  margin: 0 15px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 0;
+}
+
+.sidebar-block {
+  background: #fff;
+  border: 2px solid #33707b;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.sidebar-block__title {
+  background: #33707b;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 13px 8px 11px 8px;
+  border-radius: 3px 3px 0 0;
+  letter-spacing: 0.2px;
+}
+
+.sidebar-list {
+  list-style: none;
+  padding: 14px 16px 16px 14px;
+  margin: 0;
+  background: #fff;
+}
+
+.sidebar-list li {
+  color: #33707b;
+  font-size: 15px;
+  margin-bottom: 6px;
+  line-height: 1.36;
+  border-bottom: 1px solid #dfeded;
+  transition: background 0.2s;
+  cursor: pointer;
+  padding: 2px 2px 6px 4px;
+}
+
+.sidebar-list li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.sidebar-list li:hover {
+  background: #f5f6f7;
+}
+
+/* Контентная часть (основной блок) */
+/* --- Верхний блок --- */
+.info-header-block {
+  background: #33707b;
+  color: #fff;
+  border-radius: 5px;
+  padding: 26px 28px 24px 28px;
+  margin-bottom: 35px;
+}
+.info-title-main {
+  margin-bottom: 10px;
+}
+.info-title {
+  font-size: 1.44em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.info-subtitle {
+  color: #d6f6f7;
+  font-size: 1.17em;
+}
+.info-props-row {
+  display: flex;
+  gap: 9px;
+  margin-top: 15px;
+  justify-content: space-between;
+}
+.info-prop {
+  flex: 1 1 0;
+  background: #fff;
+  color: #222;
+  border: 1.6px solid #33707b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  padding: 14px 5px 12px 5px;
+  min-width: 155px;
+}
+.info-props-row .info-prop-icon { /* Общие стили для всех иконок */
+  width: 35px;
+  height: 35px;
+  border-radius: 7px;
+  margin-bottom: 7px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  color: #33707b;
+}
+/* Свой фон для каждого квадрата: */
+.info-props-row .info-prop:nth-child(1) .info-prop-icon {
+  background-image: url('imgs/clock.svg');
+}
+.info-props-row .info-prop:nth-child(2) .info-prop-icon {
+  background-image: url('imgs/gramota.svg');
+}
+.info-props-row .info-prop:nth-child(3) .info-prop-icon {
+  background-image: url('imgs/book.svg');
+}
+.info-props-row .info-prop:nth-child(4) .info-prop-icon {
+  background-image: url('imgs/certificate.svg');
+}
+.info-prop-label {
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+/* --- О специальности --- */
+.about-row {
+  display: flex;
+  gap: 40px; 
+  margin-bottom: 40px; 
+  align-items: stretch; 
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.about-col-main {
+  flex: 1; 
+}
+
+.about-col-main h2 {
+  font-size: 32px; /* Увеличен H2 для акцента */
+  color: #245168;
+  margin-bottom: 12px; /* Добавлен отступ */
+}
+
+.spec-lead {
+  font-size: 18px; /* Немного уменьшен до 18px (был 19px) - это хороший размер для вводного абзаца */
+  line-height: 1.5; /* Улучшен межстрочный интервал для читаемости */
+  margin-bottom: 20px;
+}
+
+.about-col-main ul {
+  font-size: 16px; /* Базовый размер шрифта для списка */
+  line-height: 1.6; /* Улучшен межстрочный интервал */
+  padding-left: 20px;
+}
+
+.about-col-main ul li {
+  padding-bottom: 12px;
+}
+
+
+.about-col-imgs {
+  flex: 0 0 300px; 
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+  padding-top: 39px;
+  padding-right: 0;
+}
+
+.about-main-img {
+  width: 100%; 
+  height: 250px; 
+  background: #b3cfda;
+  border-radius: 4px;
+}
+
+.about-thumbs {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.about-thumb-img {
+  flex: 1;
+  height: 50px; 
+  background: #669dac;
+  border-radius: 2px;
+}
+
+
+/* --- Карьера --- */
+.career-row {
+  display: flex;
+  align-items: stretch; 
+  gap: 40px; 
+  margin-bottom: 40px;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.career-left {
+  flex: 1; 
+}
+
+.career-left h2 {
+  margin-top: 26.5px;
+  margin-bottom: 12px; /* Единый отступ как в about-col-main h2 */
+  font-size: 32px; /* Единый размер H2 */
+  color: #245168; 
+}
+
+.career-key-title {
+  font-weight: bold;
+  font-size: 18px; /* Приведен к единому размеру с .spec-lead */
+  margin-bottom: 15px; /* Увеличен отступ */
+}
+
+.career-left ul {
+  margin-top: 0; /* Отступ уже есть у заголовка */
+  margin-bottom: 20px;
+  padding-left: 20px;
+  font-size: 16px; /* Базовый размер шрифта для списка */
+  line-height: 1.6;
+}
+
+.career-left ul li {
+  padding-bottom: 12px;
+}
+
+.career-salary {
+  font-size: 36px; /* Сделан очень крупным и акцентным */
+  font-weight: bold;
+  color: #115e65;
+  margin: 15px 0 35px 0;
+}
+
+.career-salary > div {
+  color: #666; /* Сделан чуть менее темным */
+  font-weight: 400;
+  font-size: 14px; /* Немного увеличен для читаемости */
+  margin-top: 2px;
+}
+
+/* Примеры мест работ (правая колонка) */
+.career-right {
+  flex: 0 0 300px; 
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+  padding-top: 37px; 
+  padding-right: 0; 
+}
+
+.career-right-title {
+  font-size: 18px; /* Приведен к единому размеру с .spec-lead */
+  font-weight: bold; 
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.career-img-row {
+  display: flex;
+  gap: 10px; 
+  width: 100%;
+}
+
+.career-sample-img,
+.career-sample-img2 {
+  flex: 1; 
+  height: 100px; 
+  background: #ccd6d6;
+  border-radius: 3px;
+}
+
+.career-sample-img3 {
+  width: 100%;
+  height: 230px; 
+  background: #b3b8ba;
+  border-radius: 3px;
+}
+
+/* Медиа-запрос для мобильных устройств (улучшен) */
+@media (max-width: 1100px) {
+  .about-row,
+  .career-row,
+  .why-choose-row,
+  .info-props-row {
+    flex-direction: column;
+    gap: 20px; /* Единый gap для мобильных */
+  }
+  .about-col-main, .career-left {
+    flex: 1;
+    width: 100%;
+  }
+  .about-col-imgs, .career-right {
+    flex: 1; /* На мобильных занимают всю доступную ширину */
+    width: 100%;
+    align-items: center; /* Выравнивание по центру на мобильных */
+  }
+  .about-main-img, .career-sample-img3, .logo-placeholder {
+    width: 100%;
+  }
+}
+
+
+/* Почему выбирают наш коледж */
+.why-choose h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  margin-top: 0;
+  color: #245168;
+}
+.why-choose-row {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 26px;
+}
+.why-choose-item {
+  flex: 1 1 0;
+  color: #fff;
+  background: #33707b;
+  border-radius: 6px;
+  padding: 21px 10px 19px 10px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 500;
+  min-width: 200px;
+  position: relative;
+  margin-bottom: 0;
+}
+.why-choose-item:before {
+  content:"";
+  display: block;
+  width: 48%;
+  height: 3px;
+  background: #bcd7e6;
+  margin: 0 auto 9px auto;
+  border-radius: 2px;
+}
+.why-choose-btn {
+  display: block;
+  margin: 0 auto;
+  background: #33707b;
+  color: #fff;
+  border: none;
+  border-radius: 22px;
+  padding: 13px 38px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background .19s;
+}
+.why-choose-btn:hover { background: #41889a; }
+
+@media (max-width: 1100px) {
+  .about-row,
+  .career-row,
+  .why-choose-row,
+  .info-props-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .about-col-imgs, .career-right {
+    align-items: flex-start;
+  }
+}
+
+
+/* Мобильная адаптация */
+@media (max-width: 1100px) {
+  .site-container {
+    max-width: 100vw;
+    padding: 0 6px 18px 6px;
+  }
+  .content-row {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .sidebar {
+    flex-basis: unset;
+    margin: 0 0 18px 0;
+    width: 100%;
+    padding-top: 10px;
+  }
+  .main-content {
+    padding-right: 6px;
+    padding-left: 6px;
+  }
+}
+/* Стили для выпадающего меню в боковой панели */
+.sidebar-dropdown {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid #dfeded;
+}
+
+.sidebar-dropdown-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 2px 6px 4px;
+  color: #33707b;
+  font-size: 15px;
+  line-height: 1.36;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.sidebar-dropdown-toggle:hover {
+  background: #f5f6f7;
+}
+
+.dropdown-arrow {
+  font-size: 10px;
+  transition: transform 0.3s ease;
+  margin-left: 5px;
+}
+
+.sidebar-dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  min-width: 350px;
+  max-width: 350px;
+  background: #fff;
+  border: 2px solid #33707b;
+  border-radius: 5px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+  z-index: 1000;
+  padding: 20px;
+  margin-left: 10px;
+}
+
+.sidebar-dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-dropdown-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-dropdown-title {
+  padding: 8px 0;
+  margin-bottom: 12px;
+  font-weight: bold;
+  color: #33707b;
+  font-size: 16px;
+  border-bottom: 2px solid #33707b;
+}
+
+.sidebar-dropdown-section a {
+  display: block;
+  padding: 6px 0;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.4;
+  border-bottom: 1px solid #eee;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.sidebar-dropdown-section a:last-child {
+  border-bottom: none;
+}
+
+.sidebar-dropdown-section a:hover {
+  color: #33707b;
+  background-color: #f8f9fa;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 1100px) {
+  .sidebar-dropdown-menu {
+    position: fixed;
+    left: 10px;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    min-width: auto;
+    max-width: none;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+}
+
+/*-------------------------------------------------Страница2-------------------------------------------------------------------*/
+
+/* Стили для страницы "Поступающим" */
+
+/* Активная ссылка в навигации */
+.header-nav a.active {
+  background: #f5f6f7;
+  border-bottom: 2px solid #33707b;
+  font-weight: 500;
+}
+
+/* Заголовок страницы */
+.page-header {
+  background: #33707b;
+  color: #fff;
+  border-radius: 5px;
+  padding: 24px 28px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  width: 926px;
+}
+
+.page-header h1 {
+  font-size: 32px;
+  margin: 0 0 10px 0;
+  color: #fff;
+}
+
+.page-subtitle {
+  font-size: 18px;
+  color: #d6f6f7;
+  margin: 0;
+}
+
+/* Слайдер специальностей (1 карточка на страницу) */
+.specialties-slider {
+  margin-bottom: 40px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  width: 926px;
+  box-sizing: border-box;
+  overflow: hidden;
+
+}
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border-radius: 6px;
+
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.3s ease;
+  gap: 0; /* Оставляем 0 для точности прокрутки */
+  padding: 10px 0;
+}
+
+.slider-card {
+  flex: 0 0 100%;
+  width: 100%;
+  box-sizing: border-box;
+  
+  /* СКРУГЛЕНИЕ */
+  border-radius: 20px; /* Настройте радиус под себя */
+  
+  /* Чтобы карточка не касалась краев (чтобы было видно скругление) */
+  /* Мы добавляем "пустое место" по бокам внутри каждой карточки */
+  border: 10px solid transparent;
+  border-color: #fff; 
+  background-clip: padding-box; /* Важно: чтобы фон не залезал под прозрачную рамку */
+  
+  /* Остальные ваши стили */
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  min-height: 250px;
+}
+
+/* При наведении сохраняем эффект */
+.slider-card:hover {
+  transform: translateY(-5px);
+  border-color: transparent; /* Оставляем прозрачным, чтобы не ломать геометрию */
+}
+
+.slider-card.active {
+  border-color: #fff;
+}
+
+.card-color {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.card-content {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card-content h3 {
+  margin: 0 0 15px 0;
+  font-size: 20px;
+  color: #245168;
+  line-height: 1.3;
+  min-height: 52px;
+}
+
+.card-code {
+  color: #666;
+  font-size: 15px;
+  margin: 0 0 8px 0;
+  font-weight: 500;
+}
+
+.card-qualification {
+  color: #333;
+  font-size: 15px;
+  margin: 0 0 15px 0;
+  min-height: 40px;
+  line-height: 1.4;
+}
+
+.card-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card-detail {
+  background: #f5f6f7;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #33707b;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+/* Управление слайдером */
+.slider-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 0 10px;
+}
+
+.slider-btn {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #33707b;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #33707b;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.slider-btn:hover:not(:disabled) {
+  background: #33707b;
+  color: #fff;
+}
+
+.slider-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  border-color: #ccc;
+  color: #ccc;
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  max-width: 600px;
+}
+
+.slider-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ddd;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.slider-dot.active {
+  background: #33707b;
+  transform: scale(1.2);
+}
+
+.slider-dot:hover {
+  background: #bbb;
+}
+
+/* Детальная информация о специальности */
+.specialty-detail {
+  background: #fff;
+  border-radius: 5px;
+  padding: 25px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.detail-header {
+  margin-bottom: 25px;
+}
+
+.detail-header h2 {
+  font-size: 28px;
+  color: #245168;
+  margin: 0 0 10px 0;
+  line-height: 1.3;
+}
+
+.detail-header p {
+  color: #666;
+  font-size: 18px;
+  margin: 0;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.detail-content {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.detail-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.detail-right {
+  flex: 0 0 300px;
+  box-sizing: border-box;
+}
+
+.detail-info {
+  background: #f8f9fa;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #e9ecef;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.info-item:last-child {
+  border-bottom: none;
+}
+
+.info-label {
+  font-weight: 500;
+  color: #333;
+  font-size: 15px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.info-value {
+  color: #33707b;
+  font-weight: 500;
+  text-align: right;
+  font-size: 15px;
+  flex: 1;
+  min-width: 150px;
+}
+
+.detail-description {
+  line-height: 1.6;
+  color: #444;
+  font-size: 16px;
+}
+
+.detail-description p {
+  margin: 0 0 15px 0;
+}
+
+.detail-image {
+  height: 200px;
+  background: #e9ecef;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-weight: 500;
+  margin-bottom: 20px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.image-placeholder {
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.apply-btn {
+  width: 100%;
+  padding: 16px;
+  background: #33707b;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-sizing: border-box;
+}
+
+.apply-btn:hover {
+  background: #41889a;
+}
+
+/* Адаптивность */
+@media (max-width: 1100px) {
+  .page-header,
+  .specialties-slider {
+    width: 100%;
+  }
+  
+  .slider-card {
+    flex: 0 0 calc(100% - 0px);
+  }
+  
+  .slider-track {
+    width: calc(1400% + 195px);
+  }
+  
+  .detail-content {
+    flex-direction: column;
+  }
+  
+  .detail-right {
+    flex: 1;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .detail-image {
+    height: 180px;
+  }
+  
+  .slider-dots {
+    max-width: 400px;
+  }
+  
+  .info-item {
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+  }
+  
+  .info-label,
+  .info-value {
+    min-width: 100%;
+    text-align: left;
+  }
+  
+  .info-value {
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-card {
+    min-height: 220px;
+  }
+  
+  .card-color {
+    height: 120px;
+  }
+  
+  .card-content h3 {
+    font-size: 18px;
+    min-height: 44px;
+  }
+  
+  .page-header {
+    padding: 20px;
+  }
+  
+  .page-header h1 {
+    font-size: 24px;
+  }
+  
+  .specialty-detail {
+    padding: 20px;
+  }
+  
+  .detail-header h2 {
+    font-size: 22px;
+  }
+  
+  .detail-left {
+    min-width: 100%;
+  }
+  
+  .slider-dots {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slider-controls {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .slider-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+  }
+  
+  .specialties-slider {
+    padding: 15px;
+  }
+  
+  .card-content {
+    padding: 15px;
+  }
+  
+  .card-details {
+    gap: 8px;
+  }
+  
+  .card-detail {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+  
+  .slider-dots {
+    max-width: 250px;
+    gap: 5px;
+  }
+}
